@@ -24,9 +24,7 @@ class PotterModel {
       nickname: json['nickname'],
       hogwartsHouse: json['hogwartsHouse'],
       interpretedBy: json['interpretedBy'],
-      children: (json['children'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList(),
+      children: (json['children'] as List<dynamic>?)?.map((e) => e as String).toList(),
       image: json['image'],
       birthdate: json['birthdate'],
     );
